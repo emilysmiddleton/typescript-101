@@ -1,0 +1,30 @@
+{
+  "name": "typescript-101",
+  "version": "1.0.0",
+  "description": "A series of small examples of TypeScript fundamental concepts and design patterns.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "transpile": "./node_modules/.bin/tsc -p .",
+    "build": "npm run -s transpile",
+    "test": "npm run -s build && npm run test:unit",
+    "test:unit": "NODE_ENV=test && ./node_modules/.bin/mocha './tests/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilysmiddleton/typescript-101.git"
+  },
+  "author": "Emily Middleton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilysmiddleton/typescript-101/issues"
+  },
+  "homepage": "https://github.com/emilysmiddleton/typescript-101#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "mocha": "^5.2.0",
+    "must": "^0.13.4"
+  }
+}
