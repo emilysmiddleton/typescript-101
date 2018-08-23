@@ -1,4 +1,4 @@
-import { Calculator } from "../app/Calculator";
+import { Calculator } from "../../app/testing/Calculator";
 import * as demand from 'must';
 import 'mocha';
 
