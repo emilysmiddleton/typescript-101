@@ -1,0 +1,3 @@
+- if statements
+- ternary
+- switch statements

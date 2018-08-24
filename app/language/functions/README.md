@@ -1,0 +1,5 @@
+- Regular functions :: function add (x, y) return x + y }
+- What is a lambda
+- “Fat arrow” functions :: (x, y) => { x + y }
+- Understanding this
+- Understanding closures

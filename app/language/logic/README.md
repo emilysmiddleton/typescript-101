@@ -1,0 +1,2 @@
+- Logic functions (and, or, not)
+- Equality
