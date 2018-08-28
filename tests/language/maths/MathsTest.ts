@@ -17,8 +17,6 @@ describe('isEven: ', function() {
     });
     it('is false for odd integer', function() {
         demand(maths.isEven(7)).is(false);
-        console.log(1.32);
-        console.log(5.32 % 2);
     });
 });
 
