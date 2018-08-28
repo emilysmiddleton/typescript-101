@@ -11,7 +11,9 @@ This is an array of the numbers 1 to 5:
 `[1, 2, 3, 4, 5]`
 
 See [Arrays.ts](Arrays.ts) for examples of array creation
-and manipulation.
+and manipulation. These can be run with
+
+`npm run example:arrays`
 
 ## Sets
 

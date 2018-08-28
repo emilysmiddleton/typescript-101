@@ -1,66 +1,93 @@
-// Creating an an array is just a case of listing the starting elements.
-// This is an array of letters:
-const letters = ['A', 'B', 'C'];
-console.log('original array of letters: ' + letters);
+console.log('**********************************************');
+console.log('* How to create, query and manipulate arrays *');
+console.log('**********************************************');
 
-// Use `push` to add append more items to the end.
-letters.push('D', 'E', 'F');
-console.log('after calling \'push\': ' + letters);
+arrayCreationAndAddition();
+arrayProperties([1, 2, 3, 5, 8, 13, 21, 34]);
+arrayDeletion([1, 2, 3, 5, 8, 13, 21, 34]);
+arrayManipulation(['A','B','D']);
 
-// Use `length` to find the size
-console.log('Size of array is: ' + letters.length);
+function arrayCreationAndAddition() {
 
-// Use `splice` to remove chunks from the array.
-// This will remove 3 letters, starting at position 1 ('B');
-letters.splice(1, 3);
-console.log('after calling \'splice\': ' + letters);
+    console.log("\n*** Creating arrays and adding new elements ***");
 
-// To find out where a specific element is in the array,
-// use `indexOf`
+    // Creating an an array is just a case of listing the starting elements.
+    // This is an array of letters:
+    const letters = ['A', 'B', 'C'];
+    console.log('Original array of letters: ' + letters);
 
-const ePosition = letters.indexOf('E');
-console.log('The letter E is at position ' + ePosition);
+    // Use `push` to add append more items to the end.
+    letters.push('D', 'E', 'F');
+    console.log('After calling \'push\': ' + letters);
 
-// There is no built-in 'contains' method, as there is in other languages.
-// You'll have to check the value of indexOf.
-console.log('Contains the letter E: ' + ( ePosition >= 0));
+    // Arrays can be combined using concat
+    console.log("Concatenating two arrays: " + [1, 2, 3, 4].concat([5, 6, 7, 8]));
+}
 
-// So removing a specific element ('E') is quite verbose:
-if (ePosition >= 0) { letters.splice(ePosition, 1)}
+function arrayProperties(myArray) {
 
-console.log('after removing E: ' + letters);
+    console.log("\n*** Properties of the array ***");
 
-letters.push('G', 'H', 'I' ,"J");
+    // Use `length` to find the size
+    console.log('Size of array is: ' + myArray.length);
+
+    // To find out where a specific element is in the array,
+    // use `indexOf`
+    console.log('The number 5 is at position: ' + myArray.indexOf(5));
+
+    // There is no built-in 'contains' method, as there is in other languages.
+    // You'll have to check the value of indexOf.
+    console.log('Contains the number 5?: ' + ( myArray.indexOf(5) >= 0));
+
+    // `every` and `some` can be used to perform a boolean function against the elements of the array
+    // and aggregate the result.
+    // `every` is essentially an `and`, while `some` is an `or`.
+    console.log('Is every number greater than 5?: ' + myArray.every(number => number > 5));
+    console.log('Are any numbers greater than 5?: ' + myArray.some(number => number > 5));
+}
+
+function arrayDeletion(myArray) {
+
+    console.log("\n*** Removing elements from the array ***");
+
+    // Use `splice` to remove chunks from the array.
+    // This will remove 3 numbers, starting at position 2;
+    myArray.splice(2, 3);
+    console.log('After calling \'splice\': ' + myArray);
+
+    // So removing a specific element (13) is quite verbose:
+    if (myArray.indexOf(13) >= 0) {
+        myArray.splice(myArray.indexOf(13), 1)
+    }
+    console.log('After removing 13: ' + myArray);
+
+    // If you want to remove certain elements (those that match some test) from your array,
+    // use `filter`. As `map`, this will return a new array rather than edit your existing array.
+    const greaterThanFive = myArray.filter(number => number > 5);
+    console.log('All numbers greater than 5: ' + greaterThanFive);
+}
+
+function arrayManipulation(myArray)  {
+
+    console.log("\n*** Manipulating the elements of the array ***");
 
 // If you want to transform the elements in some way, use `map`.
 // This applies a user-defined function to each item in the array, and results in a new array.
 // Note that the original array is unchanged.
-const lowerCaseLetters = letters.map(letter => letter.toLowerCase());
-console.log('new array of lowercase letters: ' + lowerCaseLetters);
-console.log('original array unchanged: ' + letters);
+    const lowerCaseLetters = myArray.map(letter => letter.toLowerCase());
+    console.log('new array of lowercase letters: ' + lowerCaseLetters);
+    console.log('original array unchanged: ' + myArray);
 
 // If you want to change the items of the array in place, you will need to use `foreach`.
 // The callback function provides the element, index and original array.
-letters.forEach(function(part, index, theArray) {
-    theArray[index] = part.toLowerCase();
-});
-console.log('after converting to lowercase: ' + letters);
+    myArray.forEach(function(part, index, theArray) {
+        theArray[index] = part.toLowerCase();
+    });
+    console.log('after converting to lowercase: ' + myArray);
+
+}
 
 
-const numbers = [1, 2, 3, 5, 8, 13];
-
-// `every` and `some` can be used to perform a boolean function against the elements of the array
-// and aggregate the result.
-// `every` is essentially an `and`, while `some` is an `or`.
-console.log('Is every number greater than 5?: ' + numbers.every(number => number > 5));
-console.log('Are any numbers greater than 5?: ' + numbers.some(number => number > 5));
 
 
-// If you want to remove certain elements (those that match some test) from your array,
-// use `filter`. As `map`, this will return a new array rather than edit your existing array.
-const greaterThanFive = numbers.filter(number => number > 5);
-console.log('All numbers greater than 5: ' + greaterThanFive);
 
-// Arrays can be combined using concat
-
-console.log("Concatenating two arrays: " + [1, 2, 3, 4].concat([5, 6, 7, 8]));
