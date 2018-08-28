@@ -2,7 +2,7 @@
 
 A series of small examples of TypeScript fundamental concepts and design patterns.
 
-# Getting started
+## Getting started
 
 [TypeScript](https://www.typescriptlang.org/) is language that is a superset of JavaScript. 
 It allows JavaScript to be enhanced with `static typing`.
@@ -12,7 +12,7 @@ To run TypeScript, it is first `transpiled`. This means translating it into Java
 TypeScript can be transpiled and run using [node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/).
 `Node` is a JavaScript runtime, `npm` is the package manager for JavaScript.
 
-## Pre-requisites
+### Pre-requisites
 
 This is written assuming you're working with a Mac.
 
@@ -24,7 +24,7 @@ This is written assuming you're working with a Mac.
 
 `npm install -g typescript`
 
-## Running a TypeScript file
+### Running a TypeScript file
 
 Before you can run a TypeScript file, it first needs to be _transpiled_ to JavaScript.
 This is done by running:
@@ -45,7 +45,7 @@ These are defined in [package.json](package.json):
 
 So `example:hello` is a script that first transpiles, then runs the file [HelloWorld](app/HelloWorld.ts).
 
-## Hello World
+### Hello World
 
 [HelloWorld](app/HelloWorld.ts) is a TypeScript file containing a single log statement:
 
@@ -55,7 +55,16 @@ This can be run using the aforementioned script:
 
 `npm run example:hello`
 
-# [Testing](app/testing/README.md)
+## Format of this guide
+
+This guide is designed to demonstrate how to write some common scenarios in TypeScript.
+Each section will have a readme, and a runnable TypeScript file containing examples 
+of the syntax and comments explaining what is happening.
+
+There may in addition be sample unit tests and suggested exercises. 
+For that reason, we start off with an introduction to testing before delving into further language features.
+
+## [Testing](app/testing/README.md)
 
 - Why testing?
 - Unit testing with Mocha
@@ -64,7 +73,7 @@ This can be run using the aforementioned script:
 - Running tests
 - Writing your first test
 
-# Language features
+## Language features
 
 - Variables (let vs const)
 - [Control flow](app/language/flow/README.md) - if, ternary and switch statements 
@@ -80,7 +89,7 @@ This can be run using the aforementioned script:
    - Understanding this
    - Understanding closures
 
-# Design Patterns
+## Design Patterns
 
 - Tree traversal
 - Working with collections
@@ -93,13 +102,13 @@ This can be run using the aforementioned script:
 - Function composition
 - Understanding Types
 
-# Modelling with classes
+## Modelling with classes
 - Interfaces
 - Methods
 - Type signatures
 - Using type definition files
 
-# Modules
+## Modules
 
 - Organising your code
 - Exporting
