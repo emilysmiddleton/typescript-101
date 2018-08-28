@@ -10,7 +10,8 @@
     "transpile": "./node_modules/.bin/tsc -p .",
     "build": "npm run -s transpile",
     "test": "npm run -s build && npm run test:unit",
-    "test:unit": "NODE_ENV=test && ./node_modules/.bin/mocha './tests/**/*.js'"
+    "test:unit": "NODE_ENV=test && ./node_modules/.bin/mocha './tests/**/*.js'",
+    "example:arrays" : "npm run build && node app/language/collections/Arrays.ts"
   },
   "repository": {
     "type": "git",
