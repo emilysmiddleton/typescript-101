@@ -12,6 +12,7 @@
     "test": "npm run -s build && npm run test:unit",
     "test:unit": "NODE_ENV=test && ./node_modules/.bin/mocha './tests/**/*.js'",
     "example:hello" : "npm run build && node app/HelloWorld.ts",
+    "example:variables" : "npm run build && node app/language/variables/Variables.ts",
     "example:arrays" : "npm run build && node app/language/collections/Arrays.ts"
   },
   "repository": {
