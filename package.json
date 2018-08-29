@@ -14,6 +14,7 @@
     "example:hello": "npm run build && node app/HelloWorld.js",
     "example:variables": "npm run build && node app/language/variables/Variables.js",
     "example:flow": "npm run build && node app/language/flow/Flow.js",
+    "example:logic": "npm run build && node app/language/logic/LogicFunctions.js",
     "example:arrays": "npm run build && node app/language/collections/Arrays.js"
   },
   "repository": {

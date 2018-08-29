@@ -75,12 +75,12 @@ For that reason, we start off with an introduction to testing before delving int
 
 ## Language features
 
-- Variables (let vs const)
+- [Variables](app/language/variables/README.md) - var, let and const
+- [Logic functions](app/language/logic/README.md) - equality, and, or, not
 - [Control flow](app/language/flow/README.md) - if, ternary and switch statements 
-- Understanding truthy-ness
 - [Collections](app/language/collections/README.md) - arrays, lists, sets and maps
 - Object Literals
-- [Logic functions](app/language/logic/README.md) - equality, and, or, not
+
 - [Maths](app/language/maths/README.md) - common mathematical operations
 - [Functions](app/language/functions/README.md)
    - Regular functions :: function add (x, y) return x + y }
@@ -88,6 +88,7 @@ For that reason, we start off with an introduction to testing before delving int
    - “Fat arrow” functions :: (x, y) => { x + y }
    - Understanding this
    - Understanding closures
+- Understanding truthy-ness
 
 ## Design Patterns
 
