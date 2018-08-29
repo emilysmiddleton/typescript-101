@@ -19,6 +19,8 @@ No surprises here - basic mathematical operators are the same as in many other o
 | Divide | / |
 | Modulo | % |
 
+See [Maths.ts](Maths.ts) for examples.
+
 ## Other operations
 
 The library Math provides many more operations:
@@ -41,4 +43,14 @@ The library Math provides many more operations:
  - sqrt
  - tan
 
+See [Maths.ts](Maths.ts) for examples.
 
+## Suggested exercise
+
+Write the test first!
+
+Write a method that takes 5 numeric inputs. 
+Return the difference between the minimum and maximum values,
+rounded to 1 d.p.
+
+[Back to main](../../../README.md)

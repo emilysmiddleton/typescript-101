@@ -77,11 +77,11 @@ For that reason, we start off with an introduction to testing before delving int
 
 - [Variables](app/language/variables/README.md) - var, let and const
 - [Logic functions](app/language/logic/README.md) - equality, and, or, not
+- [Maths](app/language/maths/README.md) - common mathematical operations
 - [Control flow](app/language/flow/README.md) - if, ternary and switch statements 
 - [Collections](app/language/collections/README.md) - arrays, lists, sets and maps
 - Object Literals
 
-- [Maths](app/language/maths/README.md) - common mathematical operations
 - [Functions](app/language/functions/README.md)
    - Regular functions :: function add (x, y) return x + y }
    - What is a lambda
