@@ -1,6 +1,13 @@
+# Flow statements
+
+Sometimes you want to run different parts of code, according to some condition.
+This can be achieved using:
+
 - if statements
 - ternary
 - switch statements
+
+See [Flow.ts](Flow.ts) for examples.
 
 # Running the example file
 
