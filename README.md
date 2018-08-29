@@ -82,7 +82,7 @@ For that reason, we start off with an introduction to testing before delving int
 - [Collections](app/language/collections/README.md) - arrays, lists, sets and maps
 - Object Literals
 
-- [Functions](app/language/functions/README.md)
+- [Functions.ts](app/language/functions/README.md)
    - Regular functions :: function add (x, y) return x + y }
    - What is a lambda
    - “Fat arrow” functions :: (x, y) => { x + y }

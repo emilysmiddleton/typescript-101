@@ -16,7 +16,8 @@
     "example:flow": "npm run build && node app/language/flow/Flow.js",
     "example:logic": "npm run build && node app/language/logic/LogicFunctions.js",
     "example:maths": "npm run build && node app/language/maths/Maths.js",
-    "example:arrays": "npm run build && node app/language/collections/Arrays.js"
+    "example:arrays": "npm run build && node app/language/collections/Arrays.js",
+    "example:functions": "npm run build && node app/language/functions/Functions.js"
   },
   "repository": {
     "type": "git",
