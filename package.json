@@ -11,9 +11,10 @@
     "build": "npm run -s transpile",
     "test": "npm run -s build && npm run test:unit",
     "test:unit": "NODE_ENV=test && ./node_modules/.bin/mocha './tests/**/*.js'",
-    "example:hello" : "npm run build && node app/HelloWorld.ts",
-    "example:variables" : "npm run build && node app/language/variables/Variables.ts",
-    "example:arrays" : "npm run build && node app/language/collections/Arrays.ts"
+    "example:hello": "npm run build && node app/HelloWorld.js",
+    "example:variables": "npm run build && node app/language/variables/Variables.js",
+    "example:flow": "npm run build && node app/language/flow/Flow.js",
+    "example:arrays": "npm run build && node app/language/collections/Arrays.js"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,8 @@
     "@types/mocha": "^5.2.5",
     "mocha": "^5.2.0",
     "must": "^0.13.4"
+  },
+  "dependencies": {
+    "typescript": "^3.0.1"
   }
 }
